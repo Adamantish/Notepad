@@ -18,10 +18,10 @@ html, body, .notepad-post-container, .notepad-post-header {
   line-height: 5rem;
   vertical-align: middle;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.625rem;
+  font-size: 1.025rem; /*1.625*/
   font-weight: 700;
   color: white;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: -0.0625rem; }
   .notepad-post-header-title a {
     color: white; }
@@ -422,7 +422,7 @@ html, body, .notepad-post-container, .notepad-post-header {
     @media only screen and (min-width: 90em) {
       .notepad-page-title h1,
       .notepad-post-title-simple h1 {
-        font-size: 5.3125rem;
+        font-size: 4.3125rem;
         padding-top: 8.125rem;
         padding-bottom: 8.125rem; } }
   .notepad-page-title .notepad-post-meta-simple,
