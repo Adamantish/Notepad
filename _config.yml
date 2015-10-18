@@ -1,7 +1,7 @@
-title:            Notepad
+title:            Loaded
 description:      "webflog()"
 logo:             logo.png
-disqus_shortname: adamantish
+disqus_shortname: loadlife
 share:            true
 dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.
@@ -12,21 +12,18 @@ url:
 # Owner/author information
 owner:
   name:           Adam Misrahi
-  avatar:         hmfaysal.jpg
+  avatar:         me_headshot.jpg
   email:          webmisrahi@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Such a man!
+  description:    How code can teach you how to live \n How code mostly just wants you dead.
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        missrahee
-<<<<<<< HEAD
+  twitter:        missrahee     
   # facebook:       
-=======
-  facebook:       
->>>>>>> 994fa4698b4906ecc80b7b78712ba5f7508ade8c
+
   github:         adamantish      
   # instagram:      
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/102602916593522619858
+  # google_plus:    
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
