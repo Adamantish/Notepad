@@ -18,7 +18,11 @@ owner:
   description:    Such a man!
   # Social networking links used in footer. Update and remove as you like.
   twitter:        missrahee
+<<<<<<< HEAD
   # facebook:       
+=======
+  facebook:       
+>>>>>>> 994fa4698b4906ecc80b7b78712ba5f7508ade8c
   github:         adamantish      
   # instagram:      
   # For Google Authorship https://plus.google.com/authorship
