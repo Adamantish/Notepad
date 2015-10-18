@@ -1,5 +1,5 @@
 title:            Notepad
-description:      "load_life()"
+description:      "webflog()"
 logo:             logo.png
 disqus_shortname: adamantish
 share:            true
@@ -15,12 +15,12 @@ owner:
   avatar:         hmfaysal.jpg
   email:          webmisrahi@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Awesome Dude, Awesome Life
+  description:    Such a man!
   # Social networking links used in footer. Update and remove as you like.
   twitter:        missrahee
-  facebook:       
+  # facebook:       
   github:         adamantish      
-  instagram:      
+  # instagram:      
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/u/0/102602916593522619858
 
@@ -90,7 +90,7 @@ prose:
         field:
           label: "Title"
           element: "text"
-          value: "An Awesome Headline!"
+          value: "Head of The Line!"
       - name: "description"
         field:
           element: "text"
