@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-For years people have been telling me I should write a blog. They did’t mean that they’d like to read my blog. They mean that humanity would be more productive if hearing me was optional. 
+For years people have been telling me I should write a blog. They do not mean that they’d like to read my blog. They mean that humanity would be more productive if hearing me was optional. 
 
 It seemed like a great time to finally take the advice because last week I began a journey which could come to be career, if not country defining. (Well I could probably remove that if statement there but “one must handle the edge cases” is what I always say. “You’re wrong” is what others always say right after I always say that. An interesting correlation.)
 
