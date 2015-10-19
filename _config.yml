@@ -15,7 +15,7 @@ owner:
   avatar:         me_headshot.jpg
   email:          miss.rahee@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    How code can teach you how to live. How code mostly wants me dead.
+  description:    You'd trust him to feed your nan and more.
   # Social networking links used in footer. Update and remove as you like.
   twitter:        missrahee     
   # facebook:       
@@ -72,8 +72,8 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://hmfaysal.github.io/Notepad/'
-  relativeLinks: 'http://hmfaysal.github.io/Notepad/links.jsonp'
+  siteurl: 'http://adammisrahi.com'
+  relativeLinks: 'http://adammisrahi.com/links.jsonp'
   media: 'images'
   metadata:
     _posts:
@@ -116,12 +116,6 @@ prose:
           options:
             - name: "Personal"
               value: personal
-            - name: "Engineering"
-              value: engineering
-            - name: "Physics"
-              value: physics
-            - name: "Psychology"
-              value: psychology
             - name: "Interesting"
               value: interesting
             - name: "Web-Development"
