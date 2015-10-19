@@ -36,7 +36,7 @@ So, after visiting for the interview and being shocked that the place was even n
 
 Well the breaking news is that unlikely things mostly don’t happen! Yeah! It’s been two weeks of insanely fast paced learning and constant, constant ruby coding with not the slightest web page yet in sight. No magical rails doing the work till we’re well drilled in the fundamentals. If I’d known I could learn this stuff so fast I wouldn’t have kept programming tonnes of business logic in pure SQL for years.
 
-<img src="/images/vaseline_smeared_colleagues.jpg">
+<img src="/images/vaseline_smeared_colleagues.jpg" style="width:70%, height:70%">
 *Cameraphone smiles through blurry tears of gratefulness for time spent with Simon and Patty in their habitat.*
 
 So yay! ...or am I just one more of the growing battalion of professional actors on the payroll of mastermind, Dan Garland ? None of us could ever know. Certainly not me, that genius probably wiped my mind. Either way, I’m a happy empty jug being gratefully refilled.
