@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Well it's a start"
+title: "It's a start"
 description: 
 headline: 
 modified: 2015-10-09
