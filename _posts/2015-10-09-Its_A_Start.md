@@ -30,7 +30,9 @@ It gets better: The teacher:student ratio is at least a three times nicer than t
 *There's my Terrence on the left*
 
 So, after visiting for the interview and being shocked that the place was even nicer than the photos I started entertaining thoughts like these: 
-“I know it’s super unlikely, but surely someone in the world has to get conned by a 32 year old guy with some coding skills showing some suckers round his friend’s Dad’s mansion and paying his weirdly diverse friend circle to pretend to be happy alumni, each with convincing backstory, foreign accents and fake coding knowledge...so why shouldn’t it be me?”
+
+<cite> “I know it’s super unlikely, but surely someone in the world has to get conned by a 32 year old guy with some coding skills showing some suckers round his friend’s Dad’s mansion and paying his weirdly diverse friend circle to pretend to be happy alumni, each with convincing backstory, foreign accents and fake coding knowledge...so why shouldn’t it be me?”
+</cite>
 
 Well the breaking news is that unlikely things mostly don’t happen! Yeah! It’s been two weeks of insanely fast paced learning and constant, constant ruby coding with not the slightest web page yet in sight. No magical rails doing the work till we’re well drilled in the fundamentals. If I’d known I could learn this stuff so fast I wouldn’t have kept programming tonnes of business logic in pure SQL for years.
 
