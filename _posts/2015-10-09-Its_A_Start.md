@@ -39,4 +39,4 @@ Well the breaking news is that unlikely things mostly don’t happen! Yeah! It�
 <img src="/images/vaseline_smeared_colleagues.jpg" style="width:70%, height:70%">
 *Cameraphone smiles through blurry tears of gratefulness for time spent with Simon and Patty in their habitat.*
 
-So yay! ...or am I just one more of the growing battalion of professional actors on the payroll of mastermind, Dan Garland ? None of us could ever know. Certainly not me, that genius probably wiped my mind. Either way, I’m a happy empty jug being gratefully refilled.
+So yay! ...or am I just one more of the growing battalion of professional actors on the payroll of mastermind, Dan Garland ? None of us could ever know. Certainly not me. That genius man probably wiped my mind. Either way, I’m a happy empty jug being gratefully refilled.
