@@ -33,18 +33,22 @@ Game.prototype.difficulty = {
 }
 
 Game.prototype.resetShots = function() {
-  this.shots = 3
+  this.shots = 3;
+  $('#shells').html("")
+  for(var i = 1; i <= 3; i++) {
+    $('#shells').append('<div class="shell sprite" class="hud-readout"></div>')
+  };
 }
 
 Game.prototype.decrementShots = function() {
 
   if( game.shots > 0 ){
-  game.shotSound = new Audio()
-  game.shotSound.src = 'audio/shot.mp3'
-  game.shotSound.play()
+    game.shotSound = new Audio()
+    game.shotSound.src = 'audio/shot.mp3'
+    game.shotSound.play()
 
-  game.shots -= 1
-    console.log("shots left: " + game.shots)
+    game.shots -= 1
+    $('.shell').last().remove()
   };
 }
 // Fire off two new Ducks. After waiting a little while, continue to the next
