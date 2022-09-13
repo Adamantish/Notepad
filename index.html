@@ -1,0 +1,75 @@
+<head>
+<style>
+    body {
+        background-color: #000;
+        color: white;
+    }
+
+    #hero {
+        filter: blur(4px);
+        position: relative;
+        min-height: 100vh;
+
+        max-height: 100vh;
+        max-width: 450vw;
+        min-width: 100vh;
+        left: -10%;
+        /* animation: light-pulse 0.7s infinite linear; */
+
+    }
+
+    .container {
+        position: relative;
+        min-height: 100vh;
+
+        display: inline-block;
+        /* position: fixed; */
+        
+        /* width: 100% */
+    }
+
+    .poster-text {
+
+        min-width: 50%;
+        top: 39%;
+        left: 19%;
+        /* transform: translate(-50%, -50%); */
+        font-family: serif;
+        
+        position: absolute;
+    }
+
+    @keyframes light-pulse {
+        0% {
+                filter: opacity(0.4);
+            }
+        10% {
+            filter: opacity(0.46);
+        }
+
+        70% {
+            filter: opacity(0.4);
+        }
+
+        100% {
+            filter: opacity(0.4);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <script type="text/javascript" src="assets/main.js" ></script>
+        <img id="hero" src="assets/img/PXL_20220826_131106963.jpg">
+            <div class="poster-text">
+                8. October
+            </div>
+        </img>
+
+        <script type="text/javascript">
+            window.fitText(document.getElementsByClassName("poster-text")[0])
+        </script>
+    </div>
+    
+
+</body>

@@ -7,7 +7,7 @@
             --white-1: hsl(0, 0%, 100%);
             /* fonts */
             --ft-fy-1: "IBM Plex Mono", "monospace";
-            --ft-se-500: 1.5rem;
+            --ft-se-500: 3rem;
         }
 
         /* reset */
@@ -30,13 +30,53 @@
             min-height: 100vh;
             place-items: center;
         }
+
+        #type-space {
+            text-align: center;
+            width: 80%;
+        }
     
     </style>
 </head>
 
 <body class="page">
-    <p id="typeSpace"></p>
+    <p id="type-space"></p>
 </body>
 <footer>
     <script type="text/javascript" src="assets/main.js" ></script>
+    <script type="text/javascript">
+
+        // ---------- Script ----------
+
+        typeSpeed = 40
+        lineWaitTime = 1700
+        greeting_fallback = "Dear friend"
+        announcement = [
+            "It's great to see you!",
+            "Ah no, relax. We can't actually see you",
+            "But we'd really love to on..."
+        ]
+
+        secret = "nobody could ever possibly find this here" // :) Hi!
+
+
+        var el = document.getElementById("type-space")
+        var announcementLine = 0
+
+        const unscrambler = Unscrambler(secret)
+
+        var scrambled_person = params().e
+        var person
+
+        if (scrambled_person) {
+            person = unscrambler(params().e)
+        } else {
+            person = greeting_fallback
+        }
+
+        announcement.unshift(person)
+
+        tellItBrother()
+ 
+    </script>
 </footer>
