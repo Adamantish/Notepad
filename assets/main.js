@@ -85,7 +85,7 @@ function params() {
     return result
 }
 
-// ---------- mini Spaghetti ----------
+// ---------- helpers ----------
 
 function typey(el, phrase, i = 0) {
     if (i == phrase.length) { return };
@@ -95,12 +95,4 @@ function typey(el, phrase, i = 0) {
     
     setTimeout(function () { return typey(el, phrase, i); }, typeSpeed);
     return phrase.length * typeSpeed
-}
-
-function tellItBrother(i=0) { 
-    el.innerHTML = ""
-    expectedLineTime = typey(el, announcement[i]);
-    i++
-    if (announcementLine == announcement.length) { return ; }
-    setTimeout(function () { return tellItBrother(i); }, expectedLineTime + lineWaitTime)
 }

@@ -1,6 +1,5 @@
 <head>
     <style>
-        /* Based on theft from from https://codepen.io/HardBuffet/pen/vYjYprv  */
         :root {
             /* basic color palette */
             --black-1: hsl(0, 0%, 0%);
@@ -23,7 +22,6 @@
         .page {
             color: var(--black-1);
             display: grid;
-            /* text-transform: uppercase;  TODO: probably not */
             font-size: var(--ft-se-500);
             font-family: var(--ft-fy-1);
             background-color: var(--white-1);
@@ -46,6 +44,18 @@
     <script type="text/javascript" src="assets/main.js" ></script>
     <script type="text/javascript">
 
+        function tellItBrother(i=0) { 
+            if (i == announcement.length) { 
+                window.location.href = "index.html" 
+            }
+            el.innerHTML = ""
+            expectedLineTime = typey(el, announcement[i]);
+            i++
+            
+            setTimeout(function () { return tellItBrother(i); }, expectedLineTime + lineWaitTime)
+        }
+
+
         // ---------- Script ----------
 
         typeSpeed = 40
@@ -54,15 +64,13 @@
         announcement = [
             "It's great to see you!",
             "Ah no, relax. We can't actually see you",
-            "But we'd really love to on..."
+            "But we'd really love to upon the occasion of..."
         ]
-
-        secret = "nobody could ever possibly find this here" // :) Hi!
 
 
         var el = document.getElementById("type-space")
-        var announcementLine = 0
 
+        secret = "nobody could ever possibly find this here" // :) Hi!
         const unscrambler = Unscrambler(secret)
 
         var scrambled_person = params().e
@@ -77,6 +85,7 @@
         announcement.unshift(person)
 
         tellItBrother()
+        
  
     </script>
 </footer>

@@ -6,68 +6,111 @@
     }
 
     #hero {
-        filter: blur(4px);
-        position: relative;
+        /* filter: blur(0.2cm); */
+        position: fixed;
         min-height: 100vh;
 
-        max-height: 100vh;
+        /* max-height: 100vh; */
         max-width: 450vw;
         min-width: 100vh;
-        left: -10%;
-        /* animation: light-pulse 0.7s infinite linear; */
-
+        left: -6%;
+        top: -4%;
+        filter: opacity(0);
+        animation-name: hero-emerges, blurry;
+        animation-duration: 3s, 45s;
+        animation-delay: 1s, 5s;
+        animation-fill-mode: forwards, forwards;
+      
     }
 
     .container {
-        position: relative;
+        position: absolute;
         min-height: 100vh;
+        min-width: 100vh;
+        background-color: black;
+        z-index: 5;
 
-        display: inline-block;
-        /* position: fixed; */
-        
-        /* width: 100% */
     }
+    
 
     .poster-text {
-
-        min-width: 50%;
-        top: 39%;
-        left: 19%;
-        /* transform: translate(-50%, -50%); */
+        width: 50%;
         font-family: serif;
         
         position: absolute;
     }
 
-    @keyframes light-pulse {
+    .facts {
+        filter: opacity(0);
+        /* animation-name: hero-emerges; */
+        animation: hero-emerges 1.5s linear 0.7s forwards;
+    }
+
+    #pov {
+        top: 5%;
+        left: 5%;
+        font-family: monospace;
+        width: 36%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px;
+    }
+
+    #head1 {
+        top: 39%;
+        left: 20%;
+    }
+
+    #head2 {
+        top: 44%;
+        left: 22%;
+        color: lightblue;
+    }
+
+    @keyframes blurry {
         0% {
-                filter: opacity(0.4);
+                filter: blur(0);
             }
-        10% {
-            filter: opacity(0.46);
+        14% {
+                filter: blur(0.4cm);
         }
-
-        70% {
-            filter: opacity(0.4);
-        }
-
         100% {
-            filter: opacity(0.4);
+                filter: blur(2cm);
         }
+
+    }
+
+    @keyframes hero-emerges {
+        from {
+            filter: opacity(0);
+        }
+
+        to {
+            filter: opacity(1);
+        }
+        
     }
 </style>
 </head>
 <body>
     <div class="container">
         <script type="text/javascript" src="assets/main.js" ></script>
-        <img id="hero" src="assets/img/PXL_20220826_131106963.jpg">
-            <div class="poster-text">
-                8. October
+        <img id="hero" src="assets/img/welcome_us.jpg">
+            <div id="pov" class="poster-text"></div>
+            <div id="head1" class="facts poster-text">
+                8th October 2022
+            </div>
+            <a href="https://www.instagram.com/zosse.bar/?hl=en" id="head2" class="facts poster-text">
+                @Zosse
             </div>
         </img>
 
         <script type="text/javascript">
-            window.fitText(document.getElementsByClassName("poster-text")[0])
+            window.fitText(document.getElementsByClassName("poster-text"))
+            
+            typeSpeed = 70
+            lineWaitTime = 1700
+            el = document.getElementById("pov")
+            typey(el, "POV: You're at our wedding")
         </script>
     </div>
     
