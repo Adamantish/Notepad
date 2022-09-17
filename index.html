@@ -8,17 +8,17 @@
     #hero {
         /* filter: blur(0.2cm); */
         position: fixed;
-        min-height: 100vh;
+        min-height: 145vh;
 
         /* max-height: 100vh; */
         max-width: 450vw;
-        min-width: 130vh;
-        left: -6%;
+        min-width: 100vh;
+        left: -2cm;
         top: -4%;
         filter: opacity(0);
         animation-name: hero-emerges, blurry;
         animation-duration: 3s, 45s;
-        animation-delay: 2s, 5.5s;
+        animation-delay: 2s, 4s;
         animation-fill-mode: forwards, forwards;
       
     }
@@ -43,7 +43,7 @@
     .facts {
         filter: opacity(0);
         /* animation-name: hero-emerges; */
-        animation: hero-emerges 0s linear 2.2s forwards;
+        animation: hero-emerges 0.2s linear 1.5s forwards;
     }
 
     #pov {
@@ -51,18 +51,18 @@
         left: 5%;
         font-family: monospace;
         width: 36%;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(82, 82, 82, 0.3);
         padding: 10px;
     }
 
     #head1 {
         top: 67%;
-        left: 22%;
+        left: 15cm;
     }
 
     #head2 {
         top: 72%;
-        left: 24%;
+        left: 16cm;
         color: lightblue;
     }
 
@@ -71,7 +71,7 @@
                 filter: blur(0);
             }
         14% {
-                filter: blur(0.4cm);
+                filter: blur(0.3cm);
         }
         100% {
                 filter: blur(2cm);
@@ -110,7 +110,7 @@
             typeSpeed = 70
             lineWaitTime = 1700
             el = document.getElementById("pov")
-            typey(el, "POV: You went to this wedding")
+            typey(el, "POV: You went to Adam and Steffi's wedding")
         </script>
     </div>
     
