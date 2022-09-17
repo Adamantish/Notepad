@@ -15,5 +15,6 @@ scrambler = Scrambler(secret)
 
 var basePath = "file:///home/adam/Documents/weddinginvite/index.html"
 
-url = basePath + "?e=" + scrambler("Steffi darling")
-console.log(url)
+function makeLink(invitee) {
+  return basePath + "?e=" + scrambler(invitee)
+}

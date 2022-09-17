@@ -1,0 +1,28 @@
+<head>
+    <script type="text/javascript" src="assets/scrambler.js"></script>
+    <script type="text/javascript">
+        function generateLink(e) {
+            invitee = document.getElementById("invitee-name").value
+            
+            url = makeLink(invitee)
+            resultLink = document.getElementById("result")
+            debugger
+            resultLink.innerText = url
+            resultLink.href = url
+        }
+    </script>
+</head>
+<body>
+    <label for="invitee-name">Invitee name:</label>
+    <input type="text" id="invitee-name" name="Invitee"><br><br>
+    <button id="invitee-submit">Generate</button>
+
+    <a id="result" href=""></a>
+</body>
+<footer>
+    <script>
+
+        var submitButton = document.getElementById("invitee-submit")
+        submitButton.addEventListener("click", generateLink)
+    </script>
+</footer>
