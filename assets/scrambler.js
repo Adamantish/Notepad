@@ -13,7 +13,7 @@ const Scrambler = salt => {
 secret = 'nobody could ever possibly find this here'
 scrambler = Scrambler(secret)
 
-var basePath = "www.schmitzrahi.org/whyhellothere.html"
+var basePath = "https://www.schmitzrahi.org/whyhellothere.html"
 
 function makeLink(invitee) {
   return basePath + "?e=" + scrambler(invitee)
