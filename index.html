@@ -1,8 +1,8 @@
 <head>
 <style>
     @font-face {
-        font-family: Beauty;
-        src: url("assets/BeautyDemo.ttf");
+        font-family: Italianno;
+        src: url("assets/Italianno-Regular.ttf");
     }
 
     body {
@@ -21,7 +21,7 @@
         filter: opacity(0);
         animation-name: hero-emerges, blurry;
         animation-duration: 1s, 45s;
-        animation-delay: 2s, 4s;
+        animation-delay: 2s, 3s;
         animation-fill-mode: forwards, forwards;
       
     }
@@ -62,15 +62,13 @@
         font-family: monospace;
     }
 
-
-
     #head1 {
         top: 52%;
         left: 14.6cm;
         font-size: 5vh;
         background-color: rgba(49, 49, 49, 0);
         filter: opacity(0);
-        animation: hero-emerges 0.35s linear 1.5s forwards;
+        animation: hero-emerges 0.35s linear 3.5s forwards;
     }
 
     #dresscode {
@@ -85,26 +83,26 @@
         top: 97%;
         left: 8cm;
         filter: opacity(0);
-        animation: hero-emerges 0.25s linear 2.5s forwards;
+        animation: hero-emerges 0.25s linear 4.5s forwards;
     }
 
     #politeness {
         top: 123%;
-        font-family: Beauty;
+        font-family: Italianno;
         font-size: 5vh;
         text-align: center;
         width: 130%;
         left: 2cm;
         filter: opacity(0);
-        animation: hero-emerges 1s linear 5.4s forwards;
+        animation: hero-emerges 2s ease-in 7.4s forwards;
     }
 
     @keyframes blurry {
         0% {
                 filter: blur(0);
             }
-        14% {
-                filter: blur(0.3cm);
+        15% {
+                filter: blur(0.4cm);
         }
         100% {
                 filter: blur(2cm);
@@ -150,7 +148,7 @@
             </div>
 
             <div id="politeness" class="facts poster-text">
-                Kindly note that this is a family-unfriendly wedding
+                Kindly note that this is a family-unfriendly event
             </div>
         </img>
 
@@ -165,7 +163,7 @@
             setTimeout(function() { 
                 return typey(document.getElementById("dresscode"), 
                             "Dresscode: Casual chic or go crazy")
-            }, 2750)
+            }, 4750)
             
         </script>
     </div>
