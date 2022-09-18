@@ -51,10 +51,8 @@
     }
 
     .facts {
-        filter: opacity(0);
         background-color: rgba(49, 49, 49, 0.445);
-        /* animation-name: hero-emerges; */
-        animation: hero-emerges 0.2s linear 1.5s forwards;
+
         width: 95%;
         font-family: monospace;
     }
@@ -66,13 +64,23 @@
         left: 15cm;
         font-size: 10vw;
         background-color: rgba(49, 49, 49, 0);
+        filter: opacity(0);
+        animation: hero-emerges 0.2s linear 1.5s forwards;
+    }
 
+    #dresscode {
+        top: 88%;
+        left: 2cm;
+        font-size: 6vw;
+        width: max-content;
+        text-align: center;
     }
 
     #detail1 {
         top: 100%;
         left: 8cm;
-
+        filter: opacity(0);
+        animation: hero-emerges 0.2s linear 2.5s forwards;
     }
 
     @keyframes blurry {
@@ -112,7 +120,9 @@
                     @Zosse
                 </a>
             </div>
-
+            
+            <div id="dresscode" class="facts poster-text"></div>
+            
             <div id="detail1" class="facts poster-text">
                 16:00 - Cocktails and hugs
             <br>
@@ -120,16 +130,22 @@
             <br>
                 17:30-... - Free drinks, gratis tattoos, live music by 
                 <a href="https://linktr.ee/Yetzt">Yetzt</a> (kostenlos). Maybe pizza
-            </div>
+            
         </img>
 
         <script type="text/javascript">
             // window.fitText(document.getElementsByClassName("poster-text"))
             
             typeSpeed = 70
-            lineWaitTime = 1700
-            el = document.getElementById("pov")
-            typey(el, "POV: You went to Adam and Steffi's wedding")
+            
+            first_message = "POV: You went to Adam and Steffi's wedding"
+            typey(document.getElementById("pov"), first_message)
+
+            setTimeout(function() { 
+                return typey(document.getElementById("dresscode"), 
+                            "Dresscode: Casual chic or go crazy")
+            }, 2750)
+            
         </script>
     </div>
     
