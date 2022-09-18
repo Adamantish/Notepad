@@ -11,7 +11,7 @@
 
         max-width: 450vw;
         min-width: 100vh;
-        left: -2cm;
+        left: -2.5cm;
         top: -4%;
         filter: opacity(0);
         animation-name: hero-emerges, blurry;
@@ -24,85 +24,66 @@
     .container {
         position: absolute;
         min-height: 100vh;
-        min-width: 100vh;
+        min-width: 100vw;
         background-color: black;
-        z-index: 5;
-
     }
     
+    #pov {
+        top: 3%;
+        left: 5%;
+        font-family: monospace;
+        width: 90%;
+        font-size: 7vw;
+        background-color: rgba(49, 49, 49, 0.445);
+
+    }
 
     .poster-text {
-        width: 50%;
+        /* width: 50%; */
         font-family: serif;
-        
         position: absolute;
+        font-size: 6vw;
+        padding: 0.3em;
+    }
+
+    a {
+        color: rgb(116, 201, 230)
     }
 
     .facts {
         filter: opacity(0);
-        background-color: rgba(82, 82, 82, 0.3);
+        background-color: rgba(49, 49, 49, 0.445);
         /* animation-name: hero-emerges; */
         animation: hero-emerges 0.2s linear 1.5s forwards;
+        width: 95%;
+        font-family: monospace;
     }
 
-    #pov {
-        top: 5%;
-        left: 5%;
-        font-family: monospace;
-        width: 36%;
-        background-color: rgba(82, 82, 82, 0.3);
-        padding: 10px;
-    }
+
 
     #head1 {
-        top: 67%;
+        top: 52%;
         left: 15cm;
-    }
+        font-size: 10vw;
+        background-color: rgba(49, 49, 49, 0);
 
-    #the-time {
-        top: 72%;
-        left: 16cm;
-        width: 40%;
-    }
-
-    #head2 {
-        top: 72%;
-        left: 21cm;
-        color: lightblue;
     }
 
     #detail1 {
-        top: 81%;
-        left: 16cm;
-        width: 40%;
+        top: 100%;
+        left: 8cm;
 
     }
-
-    #detail2 {
-        top: 85%;
-        left: 16cm;
-        width: 40%;
-
-    }
-
-    #detail3 {
-        top: 89%;
-        left: 16cm;
-        width: 40%;
-
-    }
-
-
 
     @keyframes blurry {
         0% {
                 filter: blur(0);
             }
         14% {
-                filter: blur(0.1cm);
+                filter: blur(0.3cm);
         }
         100% {
-                filter: blur(0.5cm);
+                filter: blur(2cm);
         }
 
     }
@@ -122,30 +103,28 @@
 <body>
     <div class="container">
         <script type="text/javascript" src="assets/main.js" ></script>
-        <img id="hero" src="assets/img/magic-lake.gif">
+        <img id="hero" src="assets/img/welcome_us.jpg">
             <div id="pov" class="poster-text"></div>
             <div id="head1" class="facts poster-text">
                 8th October 2022
+                <br>
+                <a href="https://www.facebook.com/ZosseBar/">
+                    @Zosse
+                </a>
             </div>
-            <div id="the-time" class="facts poster-text">
-                16:00
-            </div>
-            <a href="https://www.facebook.com/ZosseBar/" id="head2" class="facts poster-text">
-                @Zosse
-            </a>
+
             <div id="detail1" class="facts poster-text">
                 16:00 - Cocktails and hugs
-            </div>
-            <div id="detail2" class="facts poster-text">
+            <br>
                 17:00 - Ceremony
-            </div>
-            <div id="detail3" class="facts poster-text">
-                17:30 until late - Free drinks, tattoos, live music (Yetzt). Maybe pizza
+            <br>
+                17:30-... - Free drinks, gratis tattoos, live music by 
+                <a href="https://linktr.ee/Yetzt">Yetzt</a> (kostenlos). Maybe pizza
             </div>
         </img>
 
         <script type="text/javascript">
-            window.fitText(document.getElementsByClassName("poster-text"))
+            // window.fitText(document.getElementsByClassName("poster-text"))
             
             typeSpeed = 70
             lineWaitTime = 1700
