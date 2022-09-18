@@ -11,7 +11,7 @@
     }
 
     #hero {
-        position: absolute;
+        position: relative;
         min-height: 145vh;
 
         max-width: 450vw;
@@ -28,23 +28,22 @@
 
     .container {
         position: absolute;
-        min-height: 100vh;
+        min-height: max-co;
         min-width: 100vw;
         background-color: black;
     }
     
     #pov {
-        top: 3%;
-        left: 5%;
+        top: 2%;
+        left: 3%;
         font-family: monospace;
-        width: 90%;
+        width: 90vw;
         font-size: 3.2vh;
         background-color: rgba(49, 49, 49, 0.445);
 
     }
 
     .poster-text {
-        /* width: 50%; */
         font-family: serif;
         position: absolute;
         font-size: 2.8vh;
@@ -58,43 +57,62 @@
     .facts {
         background-color: rgba(49, 49, 49, 0.445);
 
-        width: 95%;
+        width: 95vw;
         font-family: monospace;
     }
 
     #head1 {
-        top: 52%;
-        left: 14.6cm;
+        top: 46%;
+        left: 22%;
+        width: 80vw;
         font-size: 5vh;
-        background-color: rgba(49, 49, 49, 0);
+        background-color: transparent;
         filter: opacity(0);
         animation: hero-emerges 0.35s linear 3.5s forwards;
     }
 
     #dresscode {
-        top: 88%;
-        left: 2cm;
+        top: 90vh;
+        left: 3%;
         font-size: 2.8vh;
         width: max-content;
         text-align: center;
     }
 
     #detail1 {
-        top: 97%;
-        left: 8cm;
+        top: 98vh;
+        left: 8%;
         filter: opacity(0);
         animation: hero-emerges 0.25s linear 4.5s forwards;
     }
 
     #politeness {
-        top: 123%;
+        top: 125vh;
         font-family: Italianno;
         font-size: 5vh;
         text-align: center;
-        width: 130%;
-        left: 2cm;
+        width: 115vw;
+        left: 3%;
         filter: opacity(0);
         animation: hero-emerges 2s ease-in 7.4s forwards;
+    }
+
+    #container-belowfold {
+        display: block;
+        width: 140vw;
+        text-align: center;
+        background: white;
+
+    }
+
+    #rsvp {
+        background: #222222;
+        color: white;
+        margin: 1em;
+        font-size: 4vh;
+        border-style: solid;
+        font-family: serif;
+        padding: 0.2em;
     }
 
     @keyframes blurry {
@@ -143,18 +161,22 @@
                 17:00 - Ceremony
             <br>
                 17:30-... - Free bar, gratis tattoos, live music by 
-                <a href="https://linktr.ee/Yetzt">YETZT</a>
+                <a href="https://www.youtube.com/watch?v=RiN090Hy0sM">YETZT</a>, 
+                Stefchno and best bangers
                 <br> Pizza is forecasted
             </div>
 
             <div id="politeness" class="facts poster-text">
                 Kindly note that this is a family-unfriendly event
             </div>
+            <div id="container-belowfold">
+                <button id="rsvp">
+                    RSVP
+                </button>
+            </div>
         </img>
 
         <script type="text/javascript">
-            // window.fitText(document.getElementsByClassName("poster-text"))
-            
             typeSpeed = 70
             
             first_message = "POV: You went to Adam and Steffi's wedding"
@@ -165,6 +187,13 @@
                             "Dresscode: Casual chic or go crazy")
             }, 4750)
             
+            addEventListener("click", function(e) {
+                uri = "mailto:" + encodeURIComponent("cto@schmitzrahi.org")
+                uri += "&subject=" + encodeURIComponent("Yes, of course I want to watch you two get your first tattoo while unsober")
+                uri += "&body=" + encodeURIComponent("Dear Schmitzrahi, would I like to come? Would I like a plus one? Do I dance? Wouldn't you like to know.")
+                // console.log(uri)
+                window.open(uri)
+            })
         </script>
     </div>
     
