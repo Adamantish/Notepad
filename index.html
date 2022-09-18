@@ -8,17 +8,19 @@
     html {
         background-color: black;
     }
+
     body {
        
         color: white;
+        /* font-family: monospace; */
+        text-align: left;
     }
 
     #hero {
         position: relative;
-        min-height: 157vh;
-
-        max-width: 450vw;
-        min-width: 100vh;
+        min-height: 145vh;
+        max-height: 100vh;
+        /* min-width: 100vh; */
         left: -2.5cm;
         top: -4%;
         filter: opacity(0);
@@ -31,7 +33,7 @@
     .container {
         position: absolute;
         width: max-content;
-        height: 153vh;
+        height: 145vh;
         background-color: black;
     }
     
@@ -105,6 +107,10 @@
         text-align: center;
     }
 
+    #faqs {
+        text-align: left;
+    }
+
     #rsvp {
         background: #222222;
         color: white;
@@ -114,8 +120,24 @@
         font-family: serif;
         padding: 0.2em;
         filter: opacity(0);
-        animation: hero-emerges 2s ease-in 7.4s forwards;
+        animation: hero-emerges 4s ease-in 3.4s forwards;
     }
+
+    h1 {
+        font-size: 6.5vh;
+        /* font-family: monospace; */
+    }
+
+    h3 {
+        font-size: 3vh;
+    }
+
+    p { 
+        font-size: 2vh; 
+        margin-left: 2em;
+        width: 127vw;
+    }
+
 
     @keyframes blurry {
         0% {
@@ -175,7 +197,23 @@
                 <button id="rsvp">
                     RSVP
                 </button>
+                <hr></hr>
+                <h1>FAQs</h1>
             </div>
+            <h3>We really have the whole bar?</h3>
+                <p>And the Biergarten (for the non-German speakers this roughly translates to "beergarden").</p>
+            <h3>How can we express our love for yous?</h3>
+            <p>We're not keen on getting lots of things bought for us, but we made a 
+                <a href="https://www.gofundme.com/f/schmitzrahi-wedding">GofundMe </a>
+                to split between our moving-in-together fund and good causes. Still.
+                If you prefer to be creative, go ahead.
+            </p>
+            <h3>Werden es nur nervige Engländer wie dieser Klugscheißer sein</h3>
+            <p>Nein, wir glauben an Vielfalt und Repräsentation.</p>
+            <h3>Define "go crazy"</h3>
+            <p>Do what you like. Have fun, just don't worry about being formal. That's our job.</p>
+            <h3>Oooh what's in the ceremony?</h3>
+            <p>You'll just have to see. A Meister has been appointed</p>
         </img>
 
         <script type="text/javascript">
