@@ -1,5 +1,10 @@
 <head>
 <style>
+    @font-face {
+        font-family: Beauty;
+        src: url("assets/BeautyDemo.ttf");
+    }
+
     body {
         background-color: #000;
         color: white;
@@ -33,7 +38,7 @@
         left: 5%;
         font-family: monospace;
         width: 90%;
-        font-size: 7vw;
+        font-size: 3.2vh;
         background-color: rgba(49, 49, 49, 0.445);
 
     }
@@ -42,7 +47,7 @@
         /* width: 50%; */
         font-family: serif;
         position: absolute;
-        font-size: 6vw;
+        font-size: 2.8vh;
         padding: 0.3em;
     }
 
@@ -61,26 +66,37 @@
 
     #head1 {
         top: 52%;
-        left: 15cm;
-        font-size: 10vw;
+        left: 14.6cm;
+        font-size: 5vh;
         background-color: rgba(49, 49, 49, 0);
         filter: opacity(0);
-        animation: hero-emerges 0.2s linear 1.5s forwards;
+        animation: hero-emerges 0.35s linear 1.5s forwards;
     }
 
     #dresscode {
         top: 88%;
         left: 2cm;
-        font-size: 6vw;
+        font-size: 2.8vh;
         width: max-content;
         text-align: center;
     }
 
     #detail1 {
-        top: 100%;
+        top: 97%;
         left: 8cm;
         filter: opacity(0);
-        animation: hero-emerges 0.2s linear 2.5s forwards;
+        animation: hero-emerges 0.25s linear 2.5s forwards;
+    }
+
+    #politeness {
+        top: 123%;
+        font-family: Beauty;
+        font-size: 5vh;
+        text-align: center;
+        width: 130%;
+        left: 2cm;
+        filter: opacity(0);
+        animation: hero-emerges 1s linear 5.4s forwards;
     }
 
     @keyframes blurry {
@@ -128,9 +144,14 @@
             <br>
                 17:00 - Ceremony
             <br>
-                17:30-... - Free drinks, gratis tattoos, live music by 
-                <a href="https://linktr.ee/Yetzt">Yetzt</a> (kostenlos). Maybe pizza
-            
+                17:30-... - Free bar, gratis tattoos, live music by 
+                <a href="https://linktr.ee/Yetzt">YETZT</a> (kostenlos) 
+                <br> Pizza is forecasted
+            </div>
+
+            <div id="politeness" class="facts poster-text">
+                Kindly note that this is a family-unfriendly wedding
+            </div>
         </img>
 
         <script type="text/javascript">
