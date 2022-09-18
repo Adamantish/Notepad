@@ -15,7 +15,7 @@
 
     #hero {
         position: relative;
-        min-height: 145vh;
+        min-height: 157vh;
 
         max-width: 450vw;
         min-width: 100vh;
@@ -31,7 +31,7 @@
     .container {
         position: absolute;
         width: max-content;
-        height: 145vh;
+        height: 157vh;
         background-color: black;
     }
     
@@ -115,6 +115,8 @@
         border-style: solid;
         font-family: serif;
         padding: 0.2em;
+        filter: opacity(0);
+        animation: hero-emerges 2s ease-in 7.4s forwards;
     }
 
     @keyframes blurry {
@@ -191,9 +193,8 @@
             
             addEventListener("click", function(e) {
                 uri = "mailto:" + encodeURIComponent("cto@schmitzrahi.org")
-                uri += "?subject=" + encodeURIComponent("Yes, of course I want to watch you two get your first tattoo while unsober")
-                uri += "&body=" + encodeURIComponent("Dear Schmitzrahi, would I like to come? Would I like a plus one? Do I dance? Wouldn't you like to know.")
-                // console.log(uri)
+                uri += "?subject=" + encodeURIComponent("Yes, I want to watch you two get your first tattoo while not sober")
+                uri += "&body=" + encodeURIComponent("Dear marryers, Yes of course I want to come [but for some weird reason I won't]/[yay] Would I like a plus one? Do I dance? Gather round as I tell the tale of my reply...")
                 window.open(uri)
             })
         </script>
