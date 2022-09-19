@@ -12,7 +12,7 @@
     body {
        
         color: white;
-        /* font-family: monospace; */
+        font-family: serif;
         text-align: left;
     }
 
@@ -87,7 +87,7 @@
         top: 98vh;
         left: 8%;
         filter: opacity(0);
-        animation: hero-emerges 0.25s linear 4.5s forwards;
+        animation: hero-emerges 0.55s linear 4.7s forwards;
     }
 
     #politeness {
@@ -120,6 +120,7 @@
         font-family: serif;
         padding: 0.2em;
         filter: opacity(0);
+        cursor: pointer;
         animation: hero-emerges 4s ease-in 3.4s forwards;
     }
 
@@ -131,6 +132,7 @@
     h3 {
         font-size: 5vh;
         width: 130vw;
+        left: 0.3em;
     }
 
     p { 
@@ -205,10 +207,10 @@
             <h3>Define "go crazy"</h3>
             <p>Do what you like. Have fun, just don't worry about being formal. That's our job.</p>
             <h3>Sorry, I forgot where it is</h3>
-            <p><a href="https://www.instagram.com/zosse.bar/?hl=en">Zosse bar</a> which is 
-                <a href="https://goo.gl/maps/1BKbFwGENtqj4kz98">here</a>
+            <p><a href="https://www.instagram.com/zosse.bar/?hl=en">Zosse bar</a> which is in this strange little island of villageyness surrounded by the most Berlinish parts of Berlin. 
+                It's <a href="https://goo.gl/maps/1BKbFwGENtqj4kz98">here</a>
             </p>
-            <h3>How can we express our love for you?</h3>
+            <h3>What if I have an urge to give you something?</h3>
             <p>We're not keen on getting lots of things bought for us, but we made a 
                 <a href="https://www.gofundme.com/f/schmitzrahi-wedding">GofundMe </a>
                 to split between our moving-in-together fund and good causes. Still.
@@ -228,7 +230,7 @@
                             "Dresscode: Casual chic or go crazy")
             }, 4750)
             
-            addEventListener("click", function(e) {
+            document.getElementById("rsvp").addEventListener("click", function(e) {
                 uri = "mailto:" + encodeURIComponent("cto@schmitzrahi.org")
                 uri += "?subject=" + encodeURIComponent("Yes, I want to watch you two get your first tattoo while not sober")
                 uri += "&body=" + encodeURIComponent("Dear marryers, [big reveal goes here]")
