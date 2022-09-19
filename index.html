@@ -80,6 +80,12 @@
         animation: hero-emerges 4s ease-in 3.4s forwards;
     }
 
+    .container-belowfold {
+        display: block;
+        width: 145vw;
+        text-align: center;
+    }
+
     #head1 {
         top: 41%;
         left: 22%;
@@ -115,11 +121,7 @@
         animation: hero-emerges 2s ease-in 7.4s forwards;
     }
 
-    #container-belowfold {
-        display: block;
-        width: 145vw;
-        text-align: center;
-    }
+
 
     #faqs {
         text-align: left;
@@ -148,8 +150,9 @@
     }
 
     h3 {
+        position: relative;
         font-size: 5vh;
-        width: 130vw;
+        width: 111vw;
         left: 0.3em;
         filter: opacity(0);
         animation: hero-emerges 1s ease-in 1s forwards;
@@ -192,40 +195,41 @@
 <body>
     <div class="container">
         <script type="text/javascript" src="assets/main.js" ></script>
-        <img id="hero" src="assets/img/welcome_us.jpg">
-            <div id="pov" class="poster-text"></div>
-            <div id="head1" class="facts poster-text">
-                8th October 2022
-                <br>
-                <a href="https://www.facebook.com/ZosseBar/">
-                    @Zosse
-                </a>
-            </div>
-            
-            <div id="dresscode" class="facts poster-text"></div>
-            
-            <div id="detail1" class="facts poster-text">
-                16:00 - Cocktails and hugs
+        <img id="hero" src="assets/img/welcome_us.jpg"></img>
+        <div id="pov" class="poster-text"></div>
+        <div id="head1" class="facts poster-text">
+            8th October 2022
             <br>
-                17:00 - Ceremony
-            <br>
-                17:30-... - Free bar, gratis tattoos and live music by 
-                <a href="https://www.youtube.com/watch?v=RiN090Hy0sM">YETZT</a>
-                <br> Pizza is forecasted
-            </div>
+            <a href="https://www.facebook.com/ZosseBar/">
+                @Zosse
+            </a>
+        </div>
+        
+        <div id="dresscode" class="facts poster-text"></div>
+        
+        <div id="detail1" class="facts poster-text">
+            16:00 - Cocktails and hugs
+        <br>
+            17:00 - Ceremony
+        <br>
+            17:30-... - Free bar, gratis tattoos and live music by 
+            <a href="https://www.youtube.com/watch?v=RiN090Hy0sM">YETZT</a>
+            <br> Pizza is forecasted
+        </div>
 
-            <div id="politeness" class="facts poster-text">
-                Kindly note that this is a family-unfriendly event
-            </div>
-            <div id="container-belowfold">
-                <div class="annotation">Press to</div>
-                <button id="rsvp">
-                    Yes
-                </button>
-                <hr></hr>
-                <h1>FAQs</h1>
-            </div>
+        <div id="politeness" class="facts poster-text">
+            Kindly note that this is a family-unfriendly event
+        </div>
+        <div class="container-belowfold">
+            <div class="annotation">Press to</div>
+            <button id="rsvp">
+                Yes
+            </button>
+            <hr></hr>
+            <h1>FAQs</h1>
+        </div>
 
+        <div id="faqs">
             <h3>We really have the whole bar?</h3>
                 <p>And the Biergarten (for the non-German speakers this roughly translates to "beergarden").</p>
             <h3>Define "go crazy"</h3>
@@ -240,8 +244,22 @@
                 to split between our moving-in-together fund and good causes. Still.
                 If you prefer to be creative, go ahead.
             </p>
+            <h3>When should we confirm by?</h3>
+            <p>
+                Press that Yes ☝ by 1st October and we should be fine.
+            </p>
             <br>
-        </img>
+        </div>
+        <div class="container-belowfold">
+            <img src="assets/img/cat_guitar.gif"  style="height: 13vh"></img>
+            <img src="assets/img/dancing-cat-66.gif"></img>
+            <br>
+            <br>
+        </div>
+    </div>
+    
+
+        
 
         <script type="text/javascript">
             typeSpeed = 70
