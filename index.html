@@ -127,18 +127,24 @@
     h1 {
         font-size: 6.5vh;
         /* font-family: monospace; */
+        filter: opacity(0);
+        animation: hero-emerges 2s ease-in 2s forwards;
     }
 
     h3 {
         font-size: 5vh;
         width: 130vw;
         left: 0.3em;
+        filter: opacity(0);
+        animation: hero-emerges 2s ease-in 6s forwards;
     }
 
     p { 
         font-size: 3.5vh; 
         margin-left: 2em;
         width: 127vw;
+        filter: opacity(0);
+        animation: hero-emerges 2s ease-in 6s forwards;
     }
 
 
@@ -197,11 +203,12 @@
             </div>
             <div id="container-belowfold">
                 <button id="rsvp">
-                    Respond
+                    RSVP
                 </button>
                 <hr></hr>
                 <h1>FAQs</h1>
             </div>
+
             <h3>We really have the whole bar?</h3>
                 <p>And the Biergarten (for the non-German speakers this roughly translates to "beergarden").</p>
             <h3>Define "go crazy"</h3>
